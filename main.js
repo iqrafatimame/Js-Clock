@@ -17,9 +17,9 @@ function showTime(){
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
-    let time = h + ":" + m + ":" + s;
-    document.getElementById("digitalClock").innerText = time;
-    document.getElementById("digitalClock").textContent = time;
+    let time = h + " : " + m + " : " + s;
+    
+    var digitalClock = document.getElementById("digital");
+    digitalClock.textContent = time;
 }
-showTime();
-   
+setInterval(showTime,1000);
