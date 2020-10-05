@@ -3,7 +3,6 @@
     padding: 0;
 }
 body{
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -11,13 +10,14 @@ body{
 }
 .main{
     width: 100%;
-    height: 100%;
     display: flex;
+    flex-wrap:wrap;
+    grid-template-columns: 1fr 1fr;
     float: left;
-    
 }
 .clock{
-    margin-left: 100px;
+    
+    margin-left: 10%;
     margin-top: 100px;
     width: 400px;
     height: 400px;
@@ -97,8 +97,8 @@ body{
 .digitalClock{
     width: 800px;
     color: white;
-    font-size: 50px;
     font-family: 'Orbitron';
+    font-size: 50px;
     align-items: center;
     text-align: center;
     justify-content: center;
